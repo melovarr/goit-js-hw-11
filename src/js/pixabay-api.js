@@ -27,8 +27,8 @@ const nameInput = document.querySelector(".js-name-input");
                 titleColor: "#fff",
                 titleSize: "16px",
                 position: "topRight",
-                iconURL: '/src/public/ellipse.png',
-                width: '300px',
+                // iconURL: '/src/public/ellipse.png',
+                // width: '300px',
             });
             return;
         }
@@ -44,7 +44,7 @@ const nameInput = document.querySelector(".js-name-input");
                 titleColor: "#fff",
                 titleSize: "16px",
                 position: "topRight",
-                width: "300px",
+                // width: "300px",
             }))
             .finally(() => {
                 newLoader("none");

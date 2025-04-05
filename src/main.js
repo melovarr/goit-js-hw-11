@@ -13,7 +13,7 @@ function submitHandler(event) {
         formInput.reset();
         iziToast.show({
             title: "Enter correct data, please",
-            backgroundColor: "#f6f932",
+            backgroundColor: "#ef4040",
             titleColor: "#fff",
             titleSize: "16px",
             position: "topRight",
