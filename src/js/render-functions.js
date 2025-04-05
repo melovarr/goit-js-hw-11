@@ -33,24 +33,10 @@ function runLightbox() {
     const newGallery = new SimpleLightBox('.gallery a', {
         captionData: 'alt',
         captionDelay: 250,
+        overlayOpacity: 0.8,
     });
     newGallery.refresh();
-}
-
-// function showLoader() {
-
-// };
-
-// function hideLoader() {
-
-// };
-
-// const gallerySimple = new SimpleLightbox('.gallery a', {
-//     captionData: 'alt',
-//       captionDelay: 250,
-//   overlayOpacity: 0.8,
-//   });
-//   lightbox.refresh();
+};
 
   export function newLoader(style) {
     const loader = document.querySelector(".loader");

@@ -17,7 +17,7 @@ const nameInput = document.querySelector(".js-name-input");
     // event.preventDefault();
     // console.log(nameInput.value);
     
-    axios(`https://pixabay.com/api/?key=${API_KEY}&q=${nameInput.value}&image_type=photo&orientation=horizontal&safesearch=true`)
+    axios(`https://pixabay.com/api/?key=${API_KEY}&q=${nameInput.value}&image_type=photo&orientation=horizontal&safesearch=true&per_page=198`)
     .then(response => {
         if (!response.data.hits.length) {
             // errorVision()
@@ -27,7 +27,7 @@ const nameInput = document.querySelector(".js-name-input");
                 titleColor: "#fff",
                 titleSize: "16px",
                 position: "topRight",
-                iconURL: "./Ellipse 22.png",
+                iconURL: '/src/public/ellipse.png',
                 width: '300px',
             });
             return;
@@ -51,16 +51,16 @@ const nameInput = document.querySelector(".js-name-input");
             });
 };
 
-function errorVision() {
-    iziToast.show({
-        title: `${error.message}`,
-        backgroundColor: "#ef4040",
-        titleColor: "#fff",
-        titleSize: "16px",
-        position: "topRight",
-        width: "300px",
-    })
-}
+// function errorVision() {
+//     iziToast.show({
+//         title: `${error.message}`,
+//         backgroundColor: "#ef4040",
+//         titleColor: "#fff",
+//         titleSize: "16px",
+//         position: "topRight",
+//         width: "300px",
+//     })
+// }
 
 // function galleryDatalist(arr) {
 //     return arr.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `<li class="gallery-item">

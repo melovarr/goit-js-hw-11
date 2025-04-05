@@ -22,6 +22,6 @@ function submitHandler(event) {
         return;
     }
 clearGallery();
-newLoader("block");
+newLoader('block');
 getImagesByQuery(images);
-}
+};

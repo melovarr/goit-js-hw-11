@@ -134,5 +134,50 @@ transition: background 250ms;
   color: #2e2f42;
 }
 
+.sl-overlay {
+  background: #2e2f42 !important;
+}
+.sl-next,
+.sl-prev,
+.sl-close,
+.sl-counter {
+  color: #fff !important;
+}
+.sl-caption {
+color: #fff;
+background: #000;
+}
+
+.iziToast {
+  width: 436px !important;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: none;
+  margin:15px auto;
+  position: relative;
+  background: #FFF;
+  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+  }
+  66% {
+    background: #FF3D00;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+  }
+}
 
 
