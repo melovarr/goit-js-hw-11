@@ -23,11 +23,12 @@ const nameInput = document.querySelector(".js-name-input");
             // errorVision()
             iziToast.show({
                 title: "Sorry, there are no images matching your search query. Please try again!",
-                backgroundColor: "#c08e2b",
+                backgroundColor: "#ef4040",
                 titleColor: "#fff",
                 titleSize: "16px",
                 position: "topRight",
-                width: "300px",
+                iconURL: "./Ellipse 22.png",
+                width: '300px',
             });
             return;
         }
