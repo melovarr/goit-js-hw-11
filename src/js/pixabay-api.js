@@ -27,7 +27,7 @@ const nameInput = document.querySelector(".js-name-input");
                 titleColor: "#fff",
                 titleSize: "16px",
                 position: "topRight",
-                iconURL: './ellipse.png',
+                iconURL: './public/ellipse.png',
                 // width: '300px',
             });
             return;
